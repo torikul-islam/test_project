@@ -1,0 +1,9 @@
+{
+    "name": "development",
+    "dbConfig": {
+        "host": "localhost",
+        "port": 27017,
+        "dbName": "music"
+    },
+    "jwtSecret": "some#$strong12345"
+}
