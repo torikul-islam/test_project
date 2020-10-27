@@ -14,14 +14,15 @@ class Database {
         this._connect();
     }
 
+
     async _connect() {
         try {
             await mongoose
                 .connect(config.get('uri'), this.options);
 
-            console.log(`Mongodb connected to database successfully...`);
+            console.log(`mongodb connected to ${process.env.NODE_ENV} environment`);
         } catch (ex) {
-            console.error(`Failed to established connection with mongodb:`, ex.message)
+            console.error(`failed to established connection with mongodb:`, ex.message)
         }
     }
 }

@@ -1,4 +1,4 @@
 {
     "name": "production",
-    "uri": "mongodb+srv://torikul:12345@cluster0.3xmga.mongodb.net/test?retryWrites=true&w=majority"
+    "uri": "mongodb+srv://torikul:12345@cluster0.3xmga.mongodb.net/test_project?retryWrites=true&w=majority"
 }

@@ -31,16 +31,6 @@ router.post('/', async (req, res) => {
 });
 
 
-router.post('/login', (req, res) => {
-
-});
-
-
-router.post('/register', (req, res) => {
-
-});
-
-
 function validate(req) {
     const schema = Joi.object({
         email: Joi.string().min(5).max(255).required().email().trim(),
