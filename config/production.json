@@ -1,8 +1,4 @@
 {
     "name": "production",
-    "dbConfig": {
-        "host": "localhost",
-        "port": 27017,
-        "dbName": "music"
-    }
+    "uri": "mongodb+srv://torikul:12345@cluster0.3xmga.mongodb.net/test?retryWrites=true&w=majority"
 }

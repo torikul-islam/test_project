@@ -17,9 +17,9 @@ class Database {
     async _connect() {
         try {
             await mongoose
-                .connect(`mongodb://${config.get('dbConfig.host')}:${config.get('dbConfig.port')}/${config.get('dbConfig.dbName')}`, this.options);
+                .connect(config.get('uri'), this.options);
 
-            console.log(`Mongodb connected to database: '${config.get('dbConfig.dbName')}' successfully...`);
+            console.log(`Mongodb connected to database successfully...`);
         } catch (ex) {
             console.error(`Failed to established connection with mongodb:`, ex.message)
         }

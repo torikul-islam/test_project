@@ -1,9 +1,5 @@
 {
     "name": "development",
-    "dbConfig": {
-        "host": "localhost",
-        "port": 27017,
-        "dbName": "music"
-    },
+    "uri": "mongodb://localhost:27017/test_project",
     "jwtSecret": "some#$strong12345"
 }
